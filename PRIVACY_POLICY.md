@@ -1,21 +1,18 @@
-# Privacy Policy for Aerolog EFB
+# Privacy Policy
 
 ## Introduction
-This privacy policy describes how the Aerolog EFB Android app manages your personal information. The Aerolog EFB app does not collect any personal information about its users, and all data is stored locally on the device.
+This Privacy Policy explains how we collect, use, and share information about you when you use our service.
 
-## Data Collection
-We do not collect any personal information from users. The app is designed to operate entirely on your device without the need for data transmission to external servers.
+## Information We Collect
+- Personal information (e.g., name, email address, etc.)
+- Usage data (e.g., interactions, user preferences)
 
-## Age Restriction
-The Aerolog EFB app is not intended for users under the age of 13. By using this app, you affirm that you are at least 13 years old.
+## AI Elements and External Services Communication
+We may integrate AI elements into our services to enhance user experiences and provide personalized content. These elements can communicate with external services to gather data and improve functionality. We ensure that these communications comply with applicable data protection laws, and we only share necessary information to facilitate these services while safeguarding user privacy.
+
+## How We Use Your Information
+- To provide and maintain our service
+- To notify you about changes to our service
 
 ## Contact Us
-For any questions or concerns regarding this privacy policy, please contact us at NAV-INT-llc@pm.me.
-
-## Changes to This Privacy Policy
-We reserve the right to change our privacy policy at any time without notice. Please review this policy periodically for any updates or changes.
-
-## Compliance
-This privacy policy complies with global regulations including GDPR, CCPA, LGPD, and others.
-
----
+If you have any questions about this Privacy Policy, please contact us.
