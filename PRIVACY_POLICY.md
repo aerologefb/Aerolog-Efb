@@ -19,16 +19,31 @@ We are committed to complying with all applicable international privacy laws and
 
 ## Data Collection
 
-We do **NOT** collect, store, or process any type of user data, including but not limited to:
+We do **NOT** collect, store, or process any type of personal or device-level user data, including but not limited to:
 - Personal information (such as names, email addresses, physical addresses, phone numbers)
+- Account information or authentication credentials
 - Device information, IP addresses, or unique device identifiers
 - Usage analytics or behavioral data
 - Location data (precise or approximate)
 - Cookies, tracking technologies, or similar tools
 
-## AI Elements and External Services
+## AI Features and Third-Party Processing
 
-The app may contain AI features or connect to third-party services exclusively for app functionality. However, **no personal data or user information is collected, transmitted, or stored** by us or our partners. If a third-party service ever requires any information, users will be explicitly notified, and your consent will be required prior to any data sharing.
+Starting with version 2.3.0, Aerolog EFB includes optional AI-powered features:
+
+- **AI Briefing** generates a natural-language summary of your flight.
+- **Voice Assistant** lets you ask spoken or typed questions about your briefing and hear an answer.
+
+When you use these features, the following information is sent to **DeepSeek** (`api.deepseek.com`), a third-party AI service:
+
+- The **operational flight-plan text already computed by the app** (for example, flight number, route, aircraft type, fuel and weight figures, weather summaries, NOTAM summaries, and turbulence entries).
+- Your **typed or transcribed question** when using the Voice Assistant.
+
+**No personal information**—such as your name, email, Apple ID, phone number, contacts, location, device identifiers, or IP address—is sent to DeepSeek or to us.
+
+Speech audio is transcribed **on your device** using Apple's Speech framework. The audio itself is not transmitted to DeepSeek or to our servers; only the resulting text is used.
+
+The AI summary and answers are generated solely to provide the requested feature. The output is advisory and must be verified against official sources before operational use.
 
 ## Children’s Privacy
 
@@ -44,7 +59,7 @@ We do not sell, trade, rent, or otherwise transfer any user information to third
 
 ## Security
 
-As we do not store or process any personal data, there is no risk of breach, leakage, or misuse by us. The security of your data is still important—if you use external services or features, please review their policies for more information.
+We do not store or process personal data on our servers. Data you import into the app remains on your device unless you choose to use the optional AI features, in which case the operational flight-plan text and your question are transmitted to DeepSeek as described above. Please review DeepSeek's privacy policy for information on how they handle data sent to their API.
 
 ## Changes to This Privacy Policy
 
