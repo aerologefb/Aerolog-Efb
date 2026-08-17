@@ -32,7 +32,32 @@ Aerolog EFB pulls METAR / TAF / airport data from AviationWeather.gov (US gov so
 
 ### D-ATIS isn't showing for my airport
 
-D-ATIS auto-fetch is currently supported for US airports (FAA D-ATIS network). For non-US airports, the ATIS card will show "No D-ATIS published" — this is expected. Use the regional ATIS frequency at the airport.
+D-ATIS decodes worldwide. US airports come from the FAA D-ATIS network. Airports outside it are served by a second source that republishes D-ATIS messages **overheard from ACARS**, so coverage depends on whether another aircraft recently requested that airport's ATIS.
+
+If the card is empty, the most likely reasons are:
+
+- No recent ACARS pickup for that airport. Nothing is published rather than something stale being shown.
+- The airport does not publish a datalink ATIS at all. Use the regional ATIS frequency.
+
+Every non-US report is labelled with the flight whose request was overheard and how old it is, so you can judge it before you use it.
+
+### The ATIS and the METAR disagree on pressure
+
+They are two different observations taken at two different times — sampling six airports live, the gap ran from 1 to 28 minutes and not one matched. Where both state a QNH and they differ by 2 hPa or more, Aerolog names the METAR figure as the current one.
+
+Runway in use, approach and transition level are never suppressed because of a pressure difference: they exist nowhere else, and losing them would cost you more than the drift does.
+
+### A card says "source unavailable"
+
+That is the app telling you the truth. Weather, NOTAM, pilot-report and forecast-wind providers each distinguish a genuinely empty result from a source it could not reach. A feed that is down reports itself as down, so it never reads as clear skies or no NOTAMs.
+
+Check your connection and refresh. If the source is out, the card stays honest until it returns.
+
+### The text is too small (or too large)
+
+Your device text-size setting scales Aerolog's own type, not just system controls. Set it in iOS Settings → Display & Brightness → Text Size, or per-app under Accessibility. Aerolog also has its own Font Size control in Settings.
+
+Scaling is clamped so that dense operational surfaces stay legible rather than clipping figures — the two settings compound, so if you already run a large system size, a smaller in-app size may read better.
 
 ### Importing my logbook from another app
 

@@ -33,17 +33,40 @@ Starting with version 2.3.0, Aerolog EFB includes optional AI-powered features:
 
 - **AI Briefing** generates a natural-language summary of your flight.
 - **Voice Assistant** lets you ask spoken or typed questions about your briefing and hear an answer.
+- **Spoken briefing** reads a briefing aloud in a human-sounding voice.
 
-When you use these features, the following information is sent to **DeepSeek** (`api.deepseek.com`), a third-party AI service:
+These features are optional. If you do not use them, nothing described in this section leaves your device.
+
+### Text generation
+
+When you use the AI Briefing or Voice Assistant, the following is sent to **DeepSeek** (`api.deepseek.com`), a third-party AI service:
 
 - The **operational flight-plan text already computed by the app** (for example, flight number, route, aircraft type, fuel and weight figures, weather summaries, NOTAM summaries, and turbulence entries).
 - Your **typed or transcribed question** when using the Voice Assistant.
 
-**No personal information**—such as your name, email, Apple ID, phone number, contacts, location, device identifiers, or IP address—is sent to DeepSeek or to us.
+Some AI processing also runs entirely **on your device** using Apple's on-device Foundation Models. Nothing is transmitted in that case.
 
-Speech audio is transcribed **on your device** using Apple's Speech framework. The audio itself is not transmitted to DeepSeek or to our servers; only the resulting text is used.
+### Speech
 
-The AI summary and answers are generated solely to provide the requested feature. The output is advisory and must be verified against official sources before operational use.
+Speech **input** is transcribed **on your device** using Apple's Speech framework. The audio itself is never transmitted; only the resulting text is used.
+
+Speech **output** is produced in one of two ways. Aerolog's offline voice runs entirely on your device. The optional human-sounding voice sends the **text of the briefing or answer to be spoken** to a third-party speech service — **ElevenLabs** (`api.elevenlabs.io`), or **OpenAI** (`api.openai.com`) as a fallback — which returns audio. That text is operational flight-plan content of the same kind described above.
+
+### What is never sent
+
+**No personal information**—such as your name, email, Apple ID, phone number, contacts, location, device identifiers, or contact list—is sent to DeepSeek, ElevenLabs, OpenAI, or to us. Aerolog EFB has no account system and never asks you to sign in.
+
+As with any internet request, the third-party service receives the network connection itself, including your IP address. We neither collect nor receive it.
+
+The AI summary, answers and spoken audio are generated solely to provide the requested feature. The output is advisory and must be verified against official sources before operational use.
+
+## Aviation Data Sources
+
+Aerolog EFB fetches weather, NOTAM, airport and imagery data directly from public aviation providers. These requests contain the **operational identifiers you are working with** — for example ICAO airport codes, route coordinates, and map tile references — and, as with any internet request, the provider receives your IP address. They contain no personal information, and no account or identifier ties a request to you.
+
+Current providers include: aviationweather.gov (METAR, TAF, SIGMET, G-AIRMET, PIREP), notams.online and SkyLink (NOTAMs), datis.clowd.io (FAA D-ATIS), atis.guru (D-ATIS outside the FAA feed, republished from ACARS), Open-Meteo (time zones and pressure-level winds), OurAirports (airport reference data), sunrise-sunset.org, NOAA NCEI (geomagnetic reference), avmet.ae (UAE METAR/TAF), and Esri World Imagery (map tiles).
+
+Each provider operates under its own privacy policy. We do not send them anything about you beyond the request itself.
 
 ## Children’s Privacy
 
@@ -59,7 +82,7 @@ We do not sell, trade, rent, or otherwise transfer any user information to third
 
 ## Security
 
-We do not store or process personal data on our servers. Data you import into the app remains on your device unless you choose to use the optional AI features, in which case the operational flight-plan text and your question are transmitted to DeepSeek as described above. Please review DeepSeek's privacy policy for information on how they handle data sent to their API.
+We do not store or process personal data on our servers. Data you import into the app remains on your device, apart from two cases described above: the optional AI features transmit operational flight-plan text and your question to DeepSeek, and the optional human-sounding voice transmits the text to be spoken to ElevenLabs or OpenAI. Aviation data requests go directly to the providers listed above. Please review those services' own privacy policies for how they handle data sent to their APIs.
 
 ## Changes to This Privacy Policy
 
