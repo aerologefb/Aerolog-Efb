@@ -47,6 +47,18 @@ They are two different observations taken at two different times — sampling si
 
 Runway in use, approach and transition level are never suppressed because of a pressure difference: they exist nowhere else, and losing them would cost you more than the drift does.
 
+### A storm cell says "DEPICTED" instead of a flash rate
+
+Lightning flash counts come from the Geostationary Lightning Mapper aboard the GOES satellites, which see the Americas, the Atlantic and the eastern Pacific. There is no equivalent coverage over the Gulf, Europe, Africa or Asia.
+
+Outside that footprint the cell still animates — a still icon on a thunderstorm reads as "nothing here" — but it is driven by the storm tops your flight plan states rather than by observed flashes, and it is labelled **DEPICTED**. A flash rate appears only where lightning was actually counted.
+
+### A volcano shows a colour code but no ash cloud
+
+Those are two different facts. The aviation colour code describes the volcano's state; whether there is an ash cloud is a separate question the advisory answers separately. An advisory centre will often report a volcano at ORANGE while stating the ash is not identifiable on satellite, or forecasting none.
+
+Aerolog draws the cloud only where one was observed or forecast. Where a message's own text and the advisory centre disagree, the detail card shows you both.
+
 ### A card says "source unavailable"
 
 That is the app telling you the truth. Weather, NOTAM, pilot-report and forecast-wind providers each distinguish a genuinely empty result from a source it could not reach. A feed that is down reports itself as down, so it never reads as clear skies or no NOTAMs.

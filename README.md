@@ -34,6 +34,13 @@ Every figure it shows you comes from your flight plan or a named source. Where a
 - Where an ATIS and a METAR disagree on pressure, the METAR is named as the current figure
 - Airport weather flips between the dispatch-issued OFP snapshot (fully offline) and live conditions
 
+### Lightning and volcanic ash
+- Storm cells flash at a rate that means something: where the GOES satellites see, Aerolog counts real lightning flashes from the Geostationary Lightning Mapper and shows the rate
+- Everywhere else cells still animate, driven by the storm tops your flight plan states — and say **DEPICTED** rather than a flash count nobody measured
+- Cells are drawn as a satellite sees them: lit from within, the flash travelling through the cloud, the anvil sheared downwind by your planned winds
+- Volcanic advisories at orange and red aviation colour codes appear at their reported position. An ash cloud is drawn only where one was actually observed or forecast — never guessed from the colour code
+- Volcanic Ash Advisories decode, including the VAA-in-NOTAM form you usually receive
+
 ### NOTAMs & hazards
 - Multi-airport parallel fetch
 - Company-NOTAM decoding

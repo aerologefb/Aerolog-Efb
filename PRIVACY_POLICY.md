@@ -64,7 +64,7 @@ The AI summary, answers and spoken audio are generated solely to provide the req
 
 Aerolog EFB fetches weather, NOTAM, airport and imagery data directly from public aviation providers. These requests contain the **operational identifiers you are working with** — for example ICAO airport codes, route coordinates, and map tile references — and, as with any internet request, the provider receives your IP address. They contain no personal information, and no account or identifier ties a request to you.
 
-Current providers include: aviationweather.gov (METAR, TAF, SIGMET, G-AIRMET, PIREP), notams.online and SkyLink (NOTAMs), datis.clowd.io (FAA D-ATIS), atis.guru (D-ATIS outside the FAA feed, republished from ACARS), Open-Meteo (time zones and pressure-level winds), OurAirports (airport reference data), sunrise-sunset.org, NOAA NCEI (geomagnetic reference), avmet.ae (UAE METAR/TAF), and Esri World Imagery (map tiles).
+Current providers include: aviationweather.gov (METAR, TAF, SIGMET, G-AIRMET, PIREP), NOAA GOES GLM lightning data on AWS Open Data (noaa-goes16 / noaa-goes18 / noaa-goes19), notams.online and SkyLink (NOTAMs), datis.clowd.io (FAA D-ATIS), atis.guru (D-ATIS outside the FAA feed, republished from ACARS), Open-Meteo (time zones and pressure-level winds), OurAirports (airport reference data), sunrise-sunset.org, NOAA NCEI (geomagnetic reference), avmet.ae (UAE METAR/TAF), and Esri World Imagery (map tiles).
 
 Each provider operates under its own privacy policy. We do not send them anything about you beyond the request itself.
 
