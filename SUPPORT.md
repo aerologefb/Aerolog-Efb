@@ -72,7 +72,12 @@ Tap **Logbook → Import CSV** and select the file. Column mapping is automatic 
 
 ### Subscription management
 
-Aerolog EFB Premium is **$9.99/month USD** with a **7-day free trial**.
+Aerolog EFB Premium comes in two plans, each with a **7-day free trial**:
+
+- **Monthly** — $9.99/month USD
+- **Yearly** — $99.99/year USD, about 17% less than twelve monthly payments
+
+Both sit in the same subscription group, so you can switch between them in iOS Settings → Apple ID → Subscriptions. Apple applies an upgrade straight away and a downgrade at your next renewal date.
 
 To **manage or cancel** your subscription:
 

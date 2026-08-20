@@ -73,10 +73,17 @@ When a weather, NOTAM, pilot-report or wind source cannot be reached, Aerolog re
 
 ## Subscription
 
-Aerolog EFB Premium — **$9.99/month USD** with a **7-day free trial**.
+Aerolog EFB Premium comes in two plans, each with a **7-day free trial**:
+
+| Plan | Price |
+| --- | --- |
+| **Monthly** | $9.99/month USD |
+| **Yearly** | $99.99/year USD — save 17% vs monthly |
+
+Both plans unlock the same features and sit in the same subscription group, so you can move between them without losing anything.
 
 - Cancel anytime in iOS Settings → Apple ID → Subscriptions
-- Auto-renews monthly until cancelled
+- Auto-renews at the end of each period until cancelled
 - Renewal occurs within 24 hours before the period ends
 - Payment is charged to your Apple ID at confirmation of purchase
 
