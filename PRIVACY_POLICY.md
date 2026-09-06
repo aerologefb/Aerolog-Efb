@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Your privacy is important to us. Aerolog-Efb (“we,” “us,” or “our”) does **not collect, store, or transmit any personal information, usage data, or analytics from users of our application, regardless of your country of residence**.
+Your privacy is important to us. Aerolog-Efb (“we,” “us,” or “our”) has **no account system, collects no personal information, and runs no analytics, tracking or advertising of any kind** — regardless of your country of residence. We receive nothing about you.
+
+Two optional features do send content off your device, and this policy describes both in full below: the **AI briefing and Voice Assistant** send operational flight-plan text to a third-party AI service, and **speech input** uses Apple’s speech recognition. Nothing sent in either case identifies you. Our App Store privacy label reflects this as **“Data Not Linked to You — User Content”**.
 
 We are committed to complying with all applicable international privacy laws and regulations, including but not limited to:
 - Australia Privacy Act and Australian Privacy Principles (APPs)
@@ -19,13 +21,15 @@ We are committed to complying with all applicable international privacy laws and
 
 ## Data Collection
 
-We do **NOT** collect, store, or process any type of personal or device-level user data, including but not limited to:
+We operate no servers that receive your data, and we do **NOT** collect, store, or process any type of personal or device-level user data, including but not limited to:
 - Personal information (such as names, email addresses, physical addresses, phone numbers)
 - Account information or authentication credentials
 - Device information, IP addresses, or unique device identifiers
 - Usage analytics or behavioral data
 - Location data (precise or approximate)
 - Cookies, tracking technologies, or similar tools
+
+This holds for us without exception. It is separate from the question of what the optional AI and speech features send to **third parties** on your instruction, which is described in the next section — that content reaches those providers, never us.
 
 ## AI Features and Third-Party Processing
 
@@ -48,7 +52,9 @@ Some AI processing also runs entirely **on your device** using Apple's on-device
 
 ### Speech
 
-Speech **input** is transcribed **on your device** using Apple's Speech framework. The audio itself is never transmitted; only the resulting text is used.
+Speech **input** uses Apple’s Speech framework. **Depending on your device, language and settings, Apple may transcribe the audio on the device or send it to Apple’s servers to do so.** iOS asks your permission before the feature is first used and states this in that prompt. Aerolog receives only the resulting text; the audio is never sent to us, and never to any third party other than Apple. Speech input is entirely optional — the assistant accepts typed questions just as well.
+
+*(Correction, September 2026: an earlier version of this policy said the audio was never transmitted. That was wrong, and it is corrected here.)*
 
 Speech **output** is produced in one of two ways. Aerolog's offline voice runs entirely on your device. The optional human-sounding voice sends the **text of the briefing or answer to be spoken** to a third-party speech service — **ElevenLabs** (`api.elevenlabs.io`), or **OpenAI** (`api.openai.com`) as a fallback — which returns audio. That text is operational flight-plan content of the same kind described above.
 
@@ -74,7 +80,7 @@ This app is intended for adults. We do not knowingly collect or request informat
 
 ## Your Privacy Rights
 
-Since we do not collect, store, share, or sell any personal or usage data, all user rights under global privacy laws (such as access, correction, deletion, objection, or portability) are inherently observed by default. If you have privacy concerns or believe your rights may have been violated, you may contact us at any time.
+We hold no personal or usage data about you — there is no account, no profile, and no server of ours holding anything — so rights under global privacy laws (such as access, correction, deletion, objection, or portability) have nothing of yours for us to act on. For the optional features described above, the content sent to DeepSeek, ElevenLabs, OpenAI or Apple is handled under those providers’ own policies, and none of it is linked to your identity by us. If you have privacy concerns or believe your rights may have been violated, you may contact us at any time.
 
 ## No Resale and No Third-Party Marketing
 
@@ -82,7 +88,7 @@ We do not sell, trade, rent, or otherwise transfer any user information to third
 
 ## Security
 
-We do not store or process personal data on our servers. Data you import into the app remains on your device, apart from two cases described above: the optional AI features transmit operational flight-plan text and your question to DeepSeek, and the optional human-sounding voice transmits the text to be spoken to ElevenLabs or OpenAI. Aviation data requests go directly to the providers listed above. Please review those services' own privacy policies for how they handle data sent to their APIs.
+We run no servers of our own, so there is nothing of yours for us to store or process. Data you import into the app remains on your device, apart from the three optional cases described above: the AI features transmit operational flight-plan text and your question to DeepSeek, the human-sounding voice transmits the text to be spoken to ElevenLabs or OpenAI, and speech input may send audio to Apple for transcription. Aviation data requests go directly to the providers listed above. Please review those services' own privacy policies for how they handle data sent to their APIs.
 
 ## Changes to This Privacy Policy
 
