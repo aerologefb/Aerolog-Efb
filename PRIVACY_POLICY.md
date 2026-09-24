@@ -70,6 +70,8 @@ The AI summary, answers and spoken audio are generated solely to provide the req
 
 Aerolog EFB fetches weather, NOTAM, airport and imagery data directly from public aviation providers. These requests contain the **operational identifiers you are working with** — for example ICAO airport codes, route coordinates, and map tile references — and, as with any internet request, the provider receives your IP address. They contain no personal information, and no account or identifier ties a request to you.
 
+**When these requests happen.** Normally they happen while you are using the app. If you turn on **Aero Watch alerts** (Settings → Aero Watch Alerts, off unless you turn it on), iOS may also run the same weather and NOTAM checks in the background for the airports of the flight you last briefed, so the app can tell you if something material changed. These background checks contain exactly what the requests above contain — ICAO codes and route coordinates — go to the same providers, and send nothing to us. iOS decides whether and when they run. Turning the setting off stops them.
+
 Current providers include: aviationweather.gov (METAR, TAF, SIGMET, G-AIRMET, PIREP), NOAA GOES GLM lightning data on AWS Open Data (noaa-goes16 / noaa-goes18 / noaa-goes19), notams.online and SkyLink (NOTAMs), datis.clowd.io (FAA D-ATIS), atis.guru (D-ATIS outside the FAA feed, republished from ACARS), Open-Meteo (time zones and pressure-level winds), OurAirports (airport reference data), sunrise-sunset.org, NOAA NCEI (geomagnetic reference), avmet.ae (UAE METAR/TAF), and Esri World Imagery (map tiles).
 
 Each provider operates under its own privacy policy. We do not send them anything about you beyond the request itself.
@@ -89,6 +91,10 @@ We do not sell, trade, rent, or otherwise transfer any user information to third
 ## Security
 
 We run no servers of our own, so there is nothing of yours for us to store or process. Data you import into the app remains on your device, apart from the three optional cases described above: the AI features transmit operational flight-plan text and your question to DeepSeek, the human-sounding voice transmits the text to be spoken to ElevenLabs or OpenAI, and speech input may send audio to Apple for transcription. Aviation data requests go directly to the providers listed above. Please review those services' own privacy policies for how they handle data sent to their APIs.
+
+**How long it stays.** When you import a new flight plan, the one it replaces is kept on the device so you can still read it — the plan, what you wrote on it, and its debrief — under **Systems → Records → Flights**. That screen sets how many are kept (the last 20 by default) and lets you remove them; when you remove a flight the app asks whether to keep a record of it or delete it outright. None of this leaves the device, and none of it reaches us.
+
+**Handing a flight to a colleague.** A flight you hand to a colleague by AirDrop goes directly to the device you choose — the plan, what you wrote on it and your Pencil marks, with no name and no device identifier — and never to us.
 
 ## Changes to This Privacy Policy
 
