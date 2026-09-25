@@ -96,6 +96,8 @@ We run no servers of our own, so there is nothing of yours for us to store or pr
 
 **Handing a flight to a colleague.** A flight you hand to a colleague by AirDrop goes directly to the device you choose — the plan, what you wrote on it and your Pencil marks, with no name and no device identifier — and never to us.
 
+**Signing a flight plan.** If you sign a flight plan in Aerolog, your staff number and signature stay on your device with that flight. They are never sent to us, and they never go with a flight you hand to a colleague.
+
 ## Changes to This Privacy Policy
 
 We may update this policy to reflect changes in law or our app’s practices. If updated, the latest version will be available on this page and will be effective immediately.
