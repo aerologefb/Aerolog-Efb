@@ -98,6 +98,8 @@ We run no servers of our own, so there is nothing of yours for us to store or pr
 
 **Signing a flight plan.** If you sign a flight plan in Aerolog, your staff number and signature stay on your device with that flight. They are never sent to us, and they never go with a flight you hand to a colleague.
 
+**Showing your aircraft on the map.** Starting with version 4.3.0, Aerolog can draw your aircraft on the route map from the device's own position and read the fix ahead. It is off unless you turn it on (the aircraft button on the World map, or Settings → Own Ship), and iOS asks your permission once, for use while the app is open — Aerolog asks for no background location. Your position stays on this device: it is never stored, never sent to us or to any third party, and never written into the flight log unless you confirm it — and what you confirm is only the time you crossed a fix. Turning the switch off, or declining the permission, stops it. We never receive your position, so everything above stands as written, and our App Store privacy label is unchanged: it counts data that leaves the device, and your position does not.
+
 ## Changes to This Privacy Policy
 
 We may update this policy to reflect changes in law or our app’s practices. If updated, the latest version will be available on this page and will be effective immediately.
